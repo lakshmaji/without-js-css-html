@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike - Web</title>
+    <link rel="stylesheet" href="colors.css" id="customStylesheet" />
+  </head>
+  <body>
+    <div class="container" id="bike">
+      <nav>
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <button id="relaunch" class="btn">Relaunch</button>
+      </nav>
+      <div class="content">
+        <h2>What</h2>
+        <h1>No</h1>
+        <p>
+          bike skeleton - HTML , bike colors - CSS, Bike engine - Javascript
+        </p>
+        <h3>Paint color (CSS)</h3>
+        <div class="color-select">
+          <div id="red"></div>
+          <div id="blue"></div>
+          <div id="black"></div>
+        </div>
+
+        <h3>Start/Stop engine (Javascript)</h3>
+        <div class="engine-opts">
+          <button class="button" id="startButton" onclick="startAudio()">
+            Start
+          </button>
+          <button
+            class="button stop"
+            id="stopButton"
+            onclick="stopAudio()"
+            disabled
+          >
+            Stop
+          </button>
+        </div>
+        <div class="core">
+          <button class="button white" onclick="withoutHTML()">
+            Without HTML
+          </button>
+          <button class="button white" onclick="withoutCSS()">
+            Without CSS
+          </button>
+          <button class="button white" onclick="withoutJS()">
+            Without Javascript
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="engine.js"></script>
+  </body>
+</html>
